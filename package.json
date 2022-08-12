@@ -1,0 +1,22 @@
+{
+  "name": "blurwindow",
+  "version": "1.0.0",
+  "description": "Actividad Academlo, modificar apariencia con controles desde la ventana",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blur",
+    "saturation",
+    "transparency",
+    "size"
+  ],
+  "author": "Sergio Raul Turizo Medina",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19",
+    "normalize.css": "^8.0.1"
+  }
+}

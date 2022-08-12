@@ -1,0 +1,99 @@
+html {
+  background-image: url(./assets/imagenFondo.png);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%;
+  overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 3vw;
+}
+
+h1:hover{
+  color: white;
+  transform: scaleX(1);
+}
+
+h2{
+  text-align: center;
+}
+
+h2:hover{
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  max-width: 80vw;
+}
+
+.circle {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  background-color: aliceblue;
+  border-radius: 50%;
+  /* background-color: rgb(255, 255, 255);
+   
+    filter: blur(10px);
+    filter: brightness(10px);
+    filter: saturate(50%); */
+}
+
+#controles {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: fit-content;
+  background-color: rgba(255, 255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 2vw;
+  border-radius: 10px;
+  color: white;
+}
+
+form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 5vw;
+  z-index: 2;
+}
+
+.containerForm {
+  background-color: rgba(255, 255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 1vw;
+  border-radius: 10px;
+}
+
+input {
+  width: 20vw;
+}
+
+.control {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 30px;
+  text-align: start;
+}
+
+.barra::-moz-range-thumb {
+  cursor: pointer;
+}
