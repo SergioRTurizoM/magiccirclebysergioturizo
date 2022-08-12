@@ -97,3 +97,79 @@ input {
 .barra::-moz-range-thumb {
   cursor: pointer;
 }
+
+
+
+@media (max-width:500px) {
+
+
+  html {
+    background-image: url(./assets/imagenFondo.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size:cover;
+    overflow: hidden;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      height: 100%;
+      width: 100%;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: ;
+  }
+
+  .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vw;
+    width: 40vw;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-bottom: 10vw;
+
+  }
+
+
+  #controles {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: fit-content;
+    background-color: rgba(255, 255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 2vw;
+    border-radius: 10px;
+    color: white;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 20%;
+  }
+  
+  h1:hover{
+    color: white;
+    transform: scaleX(1);
+  }
+  
+  h2{
+    text-align: center;
+  }
+  
+  h2:hover{
+    color: white;
+  }
+  
+}
