@@ -24,7 +24,7 @@ cambioColor();
 function satura() {
   document
     .getElementById("saturacion")
-    .addEventListener("change", cambioSatura, false);
+    .addEventListener("input", cambioSatura, false);
 }
 satura();
 
@@ -37,11 +37,12 @@ function cambioSatura() {
 }
 cambioSatura();
 
+
 /////////////////////////// DIFUMINADO///////////////////////////////////////////
 function difumina() {
   document
     .getElementById("difuminado")
-    .addEventListener("change", cambioDifumina, false);
+    .addEventListener("input", cambioDifumina, false);
 }
 difumina();
 
@@ -58,7 +59,7 @@ cambioDifumina();
 function brilla() {
   document
     .getElementById("brillo")
-    .addEventListener("change", cambioBrillo, false);
+    .addEventListener("input", cambioBrillo, false);
 }
 brilla();
 
@@ -75,7 +76,7 @@ cambioBrillo();
 function transparente() {
   document
     .getElementById("transparencia")
-    .addEventListener("change", cambioTransparencia, false);
+    .addEventListener("input", cambioTransparencia, false);
 }
 transparente();
 
