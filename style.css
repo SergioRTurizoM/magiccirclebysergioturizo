@@ -1,4 +1,4 @@
-html {
+body {
   background-image: url(./assets/imagenFondo.png);
   background-repeat: no-repeat;
   background-color: black;
@@ -6,24 +6,26 @@ html {
   overflow: hidden;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 3vw;
 }
 
-h1:hover{
+h1:hover {
   color: white;
   transform: scaleX(1);
 }
 
-h2{
+h2 {
   text-align: center;
 }
 
-h2:hover{
-  color: white blu;
+h2:hover {
+  color: white;
 }
 .container {
   display: flex;
@@ -32,7 +34,7 @@ h2:hover{
   padding: 3vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
+  margin-top: 0%;
   max-width: 80vw;
 }
 
@@ -42,13 +44,27 @@ h2:hover{
   position: relative;
   height: 30vw;
   width: 30vw;
-  background-color: aliceblue;
+  background-color: #FF5733;
   border-radius: 50%;
-  /* background-color: rgb(255, 255, 255);
-   
-    filter: blur(10px);
-    filter: brightness(10px);
-    filter: saturate(50%); */
+  /* background-color: rgb(255, 255, 255); */
+    /* filter: blur(10px); */
+    /* filter: brightness(10px);
+    filter: saturate(50%);  */
+}
+
+#colores {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: auto;
+  margin-left: auto;
+  width: 5vw;
+  height: 5vw;
+  padding: 0px;
+}
+
+#tituloselectcolor{
+  text-align: center;
 }
 
 #controles {
@@ -66,11 +82,15 @@ h2:hover{
   color: white;
 }
 
-form {
+/* .barra {
+  width: 15vw;
+} */
+
+.cuadrocontroles {
   display: flex;
   position: relative;
   flex-direction: column;
-  gap: 5vw;
+  gap: 1vw;
   z-index: 2;
 }
 
@@ -98,34 +118,36 @@ input {
   text-align: start;
 }
 
-.barra::-moz-range-thumb {
-  cursor: pointer;
+#areatexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 1%;
 }
 
-
-
-@media (max-width:500px) {
-
-
+@media (max-width: 500px) {
   html {
     background-image: url(./assets/imagenFondo.png);
     background-repeat: no-repeat;
     background-color: black;
-    background-size:cover;
+    background-size: cover;
     overflow: hidden;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      height: 100%;
-      width: 100%;
+    height: 100%;
+    width: 100%;
   }
-
 
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
   }
 
   .circle {
@@ -138,15 +160,14 @@ input {
     background-color: aliceblue;
     border-radius: 50%;
     margin-bottom: 10vw;
-
+  
   }
-
 
   #controles {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content:stretch;
+    justify-content: stretch;
     align-items: center;
     max-width: fit-content;
     background-color: rgba(255, 255, 255, 255, 0.5);
@@ -157,24 +178,23 @@ input {
     color: white;
   }
 
-  h1{
+  h1 {
     text-align: center;
     font-size: 8vw;
     margin-top: 20%;
   }
-  
-  h1:hover{
+
+  h1:hover {
     color: white;
     transform: scaleX(1);
   }
-  
-  h2{
+
+  h2 {
     font-size: 4vw;
     text-align: center;
   }
-  
-  h2:hover{
+
+  h2:hover {
     color: white;
   }
-  
 }
